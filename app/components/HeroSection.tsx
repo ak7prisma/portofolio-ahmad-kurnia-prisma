@@ -6,6 +6,7 @@ import { ArrowRight, ArrowBigDown, Download, Code2, MousePointer2 } from "lucide
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { Card } from "../ui/Card";
+import Link from "next/link";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -33,7 +34,7 @@ export default function Hero() {
       
       {/* Background Layer */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.3] mix-blend-luminosity">
+        <div className="absolute inset-0 opacity-[0.5] mix-blend-luminosity">
           <Image
             src="/FotoPrisma.png" 
             alt="Background Atmosphere"
@@ -121,12 +122,14 @@ export default function Hero() {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.5 }}
-              className="mt-10 w-full flex flex-col items-center gap-3 animate-bounce cursor-pointer"
+              className="mt-10 w-full gap-3 animate-bounce cursor-pointer"
             >
-                <span className="text-[10px] md:text-xs text-slate-500 uppercase tracking-[0.2em] font-medium">
+              <Link href="#about" className="flex flex-col items-center">
+                <span className="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-medium">
                   Scroll Down
                 </span>
                 <ArrowBigDown className="text-blue-400/80 w-5 h-5" />
+              </Link>
             </motion.div>
 
           </div>

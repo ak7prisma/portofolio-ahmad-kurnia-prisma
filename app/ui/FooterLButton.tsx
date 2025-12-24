@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function FooterButton() {
-  const links = ["Home", "About", "Skills", "Projects"];
+  const links = ["Home", "About", "Projects"];
 
   return (
     <div className="flex flex-col items-center md:items-start">

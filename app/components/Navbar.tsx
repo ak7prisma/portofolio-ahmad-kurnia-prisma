@@ -7,11 +7,11 @@ import { motion } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
 import NavButton from "../ui/NavButton";
 import MobileMenu from "../ui/MobileMenu";
+import { Button } from "../ui/Button";
 
 const navLinks = [
   { name: "Home", href: "#hero" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
 ];
 
@@ -44,7 +44,7 @@ export default function Navbar() {
           : "bg-transparent border-transparent py-4"
       }`}
     >
-      <div className="flex items-center justify-between px-6 py-3">
+      <div className="flex items-center justify-between px-10 py-3">
         
         {/* Logo */}
 
@@ -57,13 +57,15 @@ export default function Navbar() {
 
         {/* Right Section  */}
         <div className="hidden md:flex items-center gap-4">
-          <Link 
-            href="#contact"
-            className="px-5 py-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(37,99,235,0.6)] flex items-center gap-2"
+          <Button 
+            href="#contact" 
+            variant="primary" 
+            size="sm" 
+            className="rounded-full font-semibold"
+            icon={<ArrowRight size={16} />}
           >
             Contact Me
-            <ArrowRight size={16} />
-          </Link>
+          </Button>
         </div>
 
         {/* Mobile Toggle Button */}

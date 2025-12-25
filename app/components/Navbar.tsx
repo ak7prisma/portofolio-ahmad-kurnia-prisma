@@ -8,12 +8,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import NavButton from "../ui/NavButton";
 import MobileMenu from "../ui/MobileMenu";
 import { Button } from "../ui/Button";
-
-const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-];
+import { navLinks, contactLink } from "../data/navlink"; 
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,24 +42,23 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-10 py-3">
         
         {/* Logo */}
-
         <Link href="/" className="text-xl font-bold tracking-tight text-white flex items-center gap-0.5 hover:gap-1.5 duration-300 group">
             <Image src="/LogoPrisma.png" alt="Logo" width={150} height={150} className="group-hover:rotate-2 duration-300" />
         </Link>
 
-        {/* 2. Desktop Nav  */}
+        {/* 2. Desktop Nav */}
         <NavButton links={navLinks} />
 
         {/* Right Section  */}
         <div className="hidden md:flex items-center gap-4">
           <Button 
-            href="#contact" 
+            href={contactLink.href} 
             variant="primary" 
             size="sm" 
             className="rounded-full font-semibold"
             icon={<ArrowRight size={16} />}
           >
-            Contact Me
+            {contactLink.name} Me
           </Button>
         </div>
 
@@ -76,7 +70,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* 3. Mobile Menu Component */}
+      {/* 3. Mobile Menu */}
       <MobileMenu isOpen={isOpen} setIsOpen={setIsOpen} links={navLinks} />
       
     </motion.nav>

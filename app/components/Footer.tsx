@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import FooterButton from "../ui/FooterLButton";
+import FooterButton from "../ui/FooterButton";
 import SocialMedia from "../ui/SocialMedia";
 import FooterLogo from "../ui/FooterLogo";
 
@@ -33,7 +33,7 @@ export default function Footer() {
         {/* Bottom Area (Copyright) */}
         <div className="pt-8 border-t border-white/5 flex flex-col items-center justify-center gap-6">
           <p className="text-xs text-slate-600 flex items-center gap-1">
-            © {new Date().getFullYear()} Ahmad Kurnia Prisma | ahmadkurn
+            © {new Date().getFullYear()} Ahmad Kurnia Prisma | ahmadkurniaprisma@gmail.com
           </p>
         </div>
 

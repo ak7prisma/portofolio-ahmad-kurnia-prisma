@@ -2,20 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { ExternalLink, Lock, Smartphone, Monitor } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { Button } from "../ui/Button";
 import { ProjectData } from "../data/projects"; 
-
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { 
-    opacity: 1, 
-    y: 0, 
-    transition: { duration: 0.6, ease: "easeOut" } 
-  },
-};
+import { fadeUp } from "../lib/animation";
 
 export default function ProjectCard({ project, index }: Readonly<{ project: ProjectData, index: number }>) {
   const isEven = index % 2 === 0; 

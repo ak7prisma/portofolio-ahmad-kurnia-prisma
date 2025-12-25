@@ -1,9 +1,11 @@
 # 🚀 Personal Portfolio - Ahmad Kurnia Prisma
 
-![Project Banner](/public/Preview.png)
+![Project Banner](public/Preview.png)
+
 > A modern, responsive, and interactive portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Designed to showcase my projects, skills, and professional journey with smooth animations and clean architecture.
 
-🔗 **Live Demo:** https://portofolio-ahmad-kurnia-prisma.vercel.app/
+🔗 **Live Demo:** [https://portofolio-ahmad-kurnia-prisma.vercel.app/](https://portofolio-ahmad-kurnia-prisma.vercel.app/)
+
 ---
 
 ## 🛠️ Tech Stack
@@ -39,9 +41,73 @@ root/
 ├── app/               # Next.js App Router pages
 ├── components/        # Reusable UI components
 │   ├── ui/            # Atomic components (Buttons, Inputs, Cards)
-│   ├── project/      # Project-specific components (Preview, Details)
+│   ├── project/       # Project-specific components (Preview, Details)
 │   ├── contact/       # Contact form & info components
-│   └── .../           # Other component about & hero
+│   └── .../           # Other component (about, hero, etc)
 ├── data/              # ALL content (Text, Links, Projects) lives here
 ├── hooks/             # Custom React Hooks (e.g., useContactForm)
 └── lib/               # Utilities (Animation variants, helpers)
+
+```
+
+---
+
+## 🚀 Getting Started Locally
+
+Follow these steps to run the project on your local machine:
+
+1. **Clone the repository**
+```bash
+git clone [https://github.com/ak7prisma/portofolio-ahmad-kurnia-prisma.git](https://github.com/ak7prisma/portofolio-ahmad-kurnia-prisma.git)
+cd portfolio-ahmad-kurnia-prisma
+
+```
+
+
+2. **Install Dependencies**
+```bash
+npm install
+# or
+yarn install
+
+```
+
+
+3. **Run Development Server**
+```bash
+npm run dev
+
+```
+
+
+4. **Open in Browser**
+Visit `http://localhost:3001` to see the app in action.
+
+---
+
+## 📝 Customization
+
+Because of the **Data-Driven** architecture, you can update the content easily without touching the UI code:
+
+* **Update Bio/Stats:** Edit `root/data/about.tsx`
+* **Update Projects:** Edit `root/data/projects.tsx`
+* **Update Social Links:** Edit `root/data/socials.tsx`
+* **Update Contact Info:** Edit `root/data/contact.tsx`
+
+---
+
+## 📬 Contact
+
+Feel free to reach out if you want to collaborate or just say hi!
+
+* **Email:** ahmadkurniaprisma@gmail.com
+* **LinkedIn:** [Ahmad Kurnia Prisma](https://www.google.com/search?q=https://www.linkedin.com/in/ahmad-kurnia-prisma-1b639a313)
+* **Instagram:** [@akprisma](https://www.google.com/search?q=https://www.instagram.com/akprisma)
+
+---
+
+Developed by **Ahmad Kurnia Prisma**
+
+```
+
+```

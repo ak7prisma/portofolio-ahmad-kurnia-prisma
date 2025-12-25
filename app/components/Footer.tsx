@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import FooterButton from "../ui/FooterButton";
-import SocialMedia from "../ui/SocialMedia";
-import FooterLogo from "../ui/FooterLogo";
+import FooterButton from "./ui/FooterButton";
+import SocialMedia from "./ui/SocialMedia";
+import FooterLogo from "./ui/FooterLogo";
 
 export default function Footer() {
   return (

@@ -5,9 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
-import NavButton from "../ui/NavButton";
-import MobileMenu from "../ui/MobileMenu";
-import { Button } from "../ui/Button";
+import NavButton from "./ui/NavButton";
+import MobileMenu from "./ui/MobileMenu";
+import { Button } from "./ui/Button";
 import { navLinks, contactLink } from "../data/navlink"; 
 
 export default function Navbar() {

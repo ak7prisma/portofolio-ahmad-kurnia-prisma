@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { fadeUp } from "../lib/animation";
-import { aboutData } from "../data/about";
+import { fadeUp } from "../../lib/animation";
+import { aboutData } from "../../data/about";
 
 export default function AboutLeft() {
   return (

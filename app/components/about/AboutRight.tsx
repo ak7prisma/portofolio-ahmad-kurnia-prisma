@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Globe, Zap } from "lucide-react";
 import { Card } from "../ui/Card";
-import { fadeUp } from "../lib/animation";
-import { educationData, stackData } from "../data/about";
+import { fadeUp } from "../../lib/animation";
+import { educationData, stackData } from "../../data/about";
 
 export default function AboutRight() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, contactLink } from "../data/navlink";
+import { navLinks, contactLink } from "../../data/navlink";
 
 export default function FooterButton() {
 

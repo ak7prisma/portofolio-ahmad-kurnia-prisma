@@ -2,8 +2,8 @@
 import { motion } from "framer-motion";
 import { Code2, MousePointer2 } from "lucide-react";
 import { Card } from "../ui/Card";
-import { floatAnimation } from "../lib/animation";
-import { heroData } from "../data/hero";
+import { floatAnimation } from "../../lib/animation";
+import { heroData } from "../../data/hero";
 
 export default function ProfilCard() {
   return (

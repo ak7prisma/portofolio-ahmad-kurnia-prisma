@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import { Button } from "../ui/Button";
-import { Badge } from "../ui/Badge";
+import { Button } from "./ui/Button";
+import { Badge } from "./ui/Badge";
 import { fadeUp } from "../lib/animation";
 import { heroData } from "../data/hero";
-import HeroBg from "./HeroBg";
-import ProfilCard from "./ProfilCard";
-import ScrollDown from "../ui/ScrollDown";
+import HeroBg from "./hero/HeroBg";
+import ProfilCard from "./hero/ProfilCard";
+import ScrollDown from "./ui/ScrollDown";
 
 export default function Hero() {
   return (

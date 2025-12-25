@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./project/ProjectCard";
 import { projects } from "../data/projects";
 import { fadeUp } from "../lib/animation";
 

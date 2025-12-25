@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { staggerContainer } from "../lib/animation";
-import AboutLeft from "./AboutLeft";
-import AboutRight from "./Aboutright";
+import AboutLeft from "./about/AboutLeft";
+import AboutRight from "./about/AboutRight";
 
 export default function About() {
   return (

@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Personal Portfolio - Ahmad Kurnia Prisma
 
-## Getting Started
+![Project Banner](/public/Preview.png)
+> A modern, responsive, and interactive portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**. Designed to showcase my projects, skills, and professional journey with smooth animations and clean architecture.
 
-First, run the development server:
+🔗 **Live Demo:** https://portofolio-ahmad-kurnia-prisma.vercel.app/
+---
+
+## 🛠️ Tech Stack
+
+This project leverages the latest web technologies for optimal performance and developer experience:
+
+-   **Framework:** [Next.js 14/15 (App Router)](https://nextjs.org/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Animation:** [Framer Motion](https://www.framer.com/motion/)
+-   **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+-   **Deployment:** [Vercel](https://vercel.com/)
+
+---
+
+## ✨ Key Features
+
+-   **🎨 Modern UI/UX:** Dark-themed, sleek design with glassmorphism effects.
+-   **📱 Fully Responsive:** Optimized for all devices (Mobile, Tablet, Desktop).
+-   **⚡ High Performance:** Static site generation and optimized assets via Next.js.
+-   **🎭 Smooth Animations:** Scroll-reveal effects and interactive elements using Framer Motion.
+-   **🧩 Modular Architecture:** Data, Logic (Hooks), and UI are strictly separated for maintainability.
+-   **📧 Working Contact Form:** Integrated with Formspree/EmailJS (custom hook implementation).
+
+---
+
+## 📂 Project Structure
+
+The project follows a "Clean Code" structure to ensure scalability:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+root/
+├── app/               # Next.js App Router pages
+├── components/        # Reusable UI components
+│   ├── ui/            # Atomic components (Buttons, Inputs, Cards)
+│   ├── project/      # Project-specific components (Preview, Details)
+│   ├── contact/       # Contact form & info components
+│   └── .../           # Other component about & hero
+├── data/              # ALL content (Text, Links, Projects) lives here
+├── hooks/             # Custom React Hooks (e.g., useContactForm)
+└── lib/               # Utilities (Animation variants, helpers)

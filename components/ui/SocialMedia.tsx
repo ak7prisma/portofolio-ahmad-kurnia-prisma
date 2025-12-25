@@ -1,4 +1,4 @@
-import { contactData } from "@/app/data/contact";
+import { contactData } from "@/data/contact";
 
 export default function SocialMedia() {
   return (
